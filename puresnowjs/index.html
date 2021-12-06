@@ -7,17 +7,23 @@
     <title>Snowjs</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./favicon.ico">
-    <!--Icons made by Freepik (https://www.freepik.com) from Flaticon (https://www.flaticon.com/)"-->
+    <!--Icons made by Freepik (https://www.freepik.com) from Flaticon (https://www.flaticon.com/) -->
 </head>
 
 <body>
     <div id="snow"></div>
 
+    <div class="checkbox">
+        <input class="snow-checkbox" type="checkbox" id="toggleSnow" checked="true" onclick="toggleSnow()" /> Toggle Snow
+    </div>
 
-    <input type="checkbox" id="toggle_snow" checked="true" onclick="toggle_snow()"> ToggleSnow </input>
-    <h1 style="text-align:center;">Hello winter</h1>
 
-    <script src="./PureSnow.js"></script>
+    <div id="content" style="text-align:center;">
+        <h1>Hello, winter!</h1>
+    </div>
+    <footer id="footer">Favicon made by Freepik (https://www.freepik.com) from Flaticon (https://www.flaticon.com/)</footer>
+      
+<script src="./pureSnow.js"></script>
 </body>
 
 </html>
