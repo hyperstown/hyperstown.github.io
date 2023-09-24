@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slidable menu</title>
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="./index.js" defer></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container-fluid">
+      <button class="btn navbar-brand" id="side-menu-toggle-button">
+        <i class="bi bi-list fs-2"></i>
+      </button>
+    </div>
+  </nav>
+  <div class="px-4 py-5 my-5 text-center">
+    <h1 class="display-5 fw-bold text-body-emphasis">Slidable menu</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">
+        The Android-App-Like Slidable Menu Template, ready-to-use for 
+        building web applications with a sliding menu behavior inspired by 
+        Android mobile applications. 
+        This template allows you to quickly create a responsive and touch-friendly 
+        menu that responds to both taps and gestures. 
+        It's ideal for improving navigation and user interaction in your web projects.
+      </p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a type="button" href="#" class="btn btn-primary btn-lg px-4 gap-3">
+          Source code
+          <span><i class="bi bi-github font-size-large"></i></span>
+        </a>
+        <a type="button" href="#" class="btn btn-outline-secondary btn-lg px-4">
+          Star project
+          <span><i class="bi bi-star font-size-large"></i></span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="side-menu-wrapper">
+    <div class="side-menu">
+      <div class="carousel-cell menu-cell-1">
+        <a class="text-decoration-none text-white" href="./">
+          <div class="logo">
+            <span><i class="bi bi-github font-size-large"></i></span>
+            <span>
+              Slidable Menu Repo
+            </span>
+          </div>
+        </a>
+        <div class="inner-menu-wrapper container p-2">
+          <a href="./" class="text-decoration-none">
+            <div class="card mb-2">
+              <div class="card-body">
+                <span><i class="bi bi-house"></i></span>
+                <span class="text">Home Page</span>
+              </div>
+            </div>
+          </a>
+          <a href="./" class="text-decoration-none">
+            <div class="card mb-2">
+              <div class="card-body">
+                <span><i class="bi bi-journal"></i></span>
+                <span class="text">Blog</span>
+              </div>
+            </div>
+          </a>
+          <a href="./" class="text-decoration-none">
+            <div class="card mb-2">
+              <div class="card-body">
+                <span><i class="bi bi-heart"></i></span>
+                <span class="text">Favorites</span>
+              </div>
+            </div>
+          </a>
+          <a href="./" class="text-decoration-none">
+            <div class="card mb-2">
+              <div class="card-body">
+                <span><i class="bi bi-mastodon"></i></span>
+                <span class="text">Social media</span>
+              </div>
+            </div>
+            <div class="card mb-2">
+              <div class="card-body">
+                <span><i class="bi bi-clock-history"></i></span>
+                <span class="text">History</span>
+              </div>
+            </div>
+          </a>
+          <a href="./" class="text-decoration-none">
+            <div class="card mb-2">
+              <div class="card-body">
+                <span><i class="bi bi-bookmark"></i></span>
+                <span class="text">Bookmarks</span>
+              </div>
+            </div>
+          </a>
+          <a href="./" class="text-decoration-none">
+            <div class="card mb-2">
+              <div class="card-body">
+                <span><i class="bi bi-shield"></i></span>
+                <span class="text">Privacy policy</span>
+              </div>
+            </div>
+        </div>
+        </a>
+      </div>
+      <div class="carousel-cell menu-cell-2"></div>
+    </div>
+    <div class="side-menu-overlay"></div>
+  </div>
+
+</body>
+
+</html>
