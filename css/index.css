@@ -136,6 +136,10 @@ html {
   .tabs ul li label i {
     font-size: 1.5em;
   }
+
+  .tabs ul li {
+    font-size: 1.1rem;
+  }
 }
 
 .blur-cards {
@@ -190,7 +194,7 @@ html {
 
 .card {
   --background: linear-gradient(to left, #21D4FD 0%, #B721FF 100%);
-  width: 75%;
+  width: 100%;
   max-width: 1000px;
   height: 60px;
   padding: 2px;
