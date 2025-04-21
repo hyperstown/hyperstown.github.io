@@ -3,30 +3,107 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <title>Hyperstown - home</title>
-  <style>
-    * {
-      font-family: sans-serif;
-      color: #efefef;
-    }
-  </style>
+  <title>hyperstown - Home</title>
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/bootstrap-icons/bootstrap-icons.min.css">
+  <link rel="shortcut icon" href="/assets/favicon.svg" type="image/x-icon">
 </head>
 
 <body>
-  <div class="content" style="text-align:center;">
-    <h1>Hello welcome to my GitHub home page.</h1>
-    <h2>There is not much content right now...</h1>
-    <h2>But you can checkout demos for my projects:</h2>
-    <h2>
-      <ul style="width: 300px; margin: 0 auto;">
-        <li><a href="/pure-snowjs/">PureSnow.js</a></li>
-        <li><a href="/slidable-menu/">Slidable menu</a></li>
-        <li><a href="/station/">Weather Station</a></li>
-      </ul>
-    </h2>
+
+  <div class="tabs">
+    <input type="radio" id="tab1" name="tab-control" checked>
+    <input type="radio" id="tab2" name="tab-control">
+    <ul>
+      <li title="About">
+        <label for="tab1" role="button">
+          <i class="bi bi-person"></i>
+          <br><span>About me</span>
+        </label>
+      </li>
+      <li title="Projects">
+        <label for="tab2" role="button">
+          <i class="bi bi-link"></i>
+          <br><span>Live projects</span>
+        </label>
+      </li>
+    </ul>
+
+    <div class="slider">
+      <div class="indicator"></div>
+    </div>
+    <div class="content">
+      <section>
+        <p>Hello, I'm hyperstown and this is my Github page. Duh!</p>
+        <p>
+          You can find here a lot of webdev and Linux stuff.
+          While those are two main things sometimes you might
+          stumble accross some C/C++ or Rust (hopefully in the future). <br />
+          Anything I find interesting will land here. <br />
+          Speaking of interesting, fun fact: this homepage is not using any JavaScript!
+        </p>
+        <p>
+          My goal here is to provide a ton of useful things that might speed up your
+          development or improve your life in general.
+        </p>
+        <br />
+
+        <h4>Base stack:</h4>
+        <div class="blur-cards">
+          <!-- Icons from https://www.svgrepo.com -->
+          <a class="blur-card" href="https://en.wikipedia.org/wiki/Python_(programming_language)">
+            <img src="/assets/python-icon-1024x1024-um8dvx3b-3365769693.png" width="50" height="50" alt="">
+            <p class="second-text">Python</p>
+          </a>
+          <a class="blur-card" href="https://en.wikipedia.org/wiki/Django_(web_framework)">
+            <img src="/assets/django.svg" width="50" height="50" alt="">
+            <p class="second-text">Django</p>
+          </a>
+          <a class="blur-card" href="https://en.wikipedia.org/wiki/JavaScript">
+            <img src="/assets/js.svg" width="50" height="50" alt="">
+            <p class="second-text">JavaScript</p>
+          </a>
+          <a class="blur-card" href="https://en.wikipedia.org/wiki/Vue.js">
+            <img src="/assets/vue.svg" width="50" height="50" alt="">
+            <p class="second-text">Vue.js</p>
+          </a>
+          <a class="blur-card" href="https://en.wikipedia.org/wiki/Svelte">
+            <img src="/assets/svelte.svg" width="50" height="50" alt="">
+            <p class="second-text">Svelte</p>
+          </a>
+          <a class="blur-card" href="https://alpinejs.dev/">
+            <img src="/assets/alpinejs-logo.png" width="50" height="50" alt="">
+            <p class="second-text">Alpine.js</p>
+          </a>
+        </div>
+        <h5 style="text-align: center;">And more!</h5>
+      </section>
+      <section>
+        <h3 style="text-align: center;">Projects with interactive demos:</h3>
+        <br>
+
+        <div class="projects" style="display: flex; flex-direction: column; gap: 18px; align-items: center;">
+          <a class="card" href="/pure-snowjs/">
+            <div class="card-info">
+              <i class="bi bi-snow"></i>
+              <span>Snowfall effect</span>
+            </div>
+          </a>
+          <a class="card" href="/station/">
+            <div class="card-info">
+              <i class="bi bi-thermometer-sun"></i>
+              <span>Weather station</span>
+            </div>
+          </a>
+          <a class="card" href="/slidable-menu/">
+            <div class="card-info">
+              <i class="bi bi-arrows"></i>
+              <span>Slidable menu</span>
+            </div>
+          </a>
+        </div>
+      </section>
+    </div>
   </div>
 </body>
 
