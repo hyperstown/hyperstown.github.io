@@ -5,6 +5,12 @@ html {
   font-family: sans-serif;
 }
 
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
 .tabs {
   position: relative;
 }
@@ -28,7 +34,8 @@ html {
   user-select: none;
   text-transform: uppercase;
   letter-spacing: .0892857143em;
-  font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: 600;
 }
 
 .tabs ul li label {
@@ -63,10 +70,10 @@ html {
 
 .tabs .slider .indicator {
   position: relative;
-  width: 170px;
+  width: 250px;
   max-width: 100%;
   margin: 0 auto;
-  height: 2px;
+  height: 3px;
   background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
   border-radius: 1px;
 }
@@ -134,7 +141,9 @@ html {
 .blur-cards {
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 130px;
 }
 
 .blur-cards .blur-card {
@@ -143,8 +152,6 @@ html {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  height: 100px;
-  width: 250px;
   border-radius: 10px;
   color: white;
   cursor: pointer;
@@ -157,7 +164,7 @@ html {
 }
 
 .blur-cards .blur-card p.second-text {
-  font-size: .7em;
+  font-size: 1em;
 }
 
 .blur-cards .blur-card:hover {
@@ -185,7 +192,7 @@ html {
   --background: linear-gradient(to left, #21D4FD 0%, #B721FF 100%);
   width: 75%;
   max-width: 1000px;
-  height: 50px;
+  height: 60px;
   padding: 2px;
   border-radius: .7rem;
   overflow: visible;
