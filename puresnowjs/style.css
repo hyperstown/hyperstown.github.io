@@ -73,7 +73,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(83, 83, 83, 0.3);
+  background-color: rgba(40, 40, 40, 0.3);
   backdrop-filter: blur(10px);
   border-radius: 15px;
   box-shadow: 0 0 15px 8px rgba(151, 151, 151, 0.5);
