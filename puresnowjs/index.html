@@ -2,28 +2,49 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snowjs</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="./favicon.ico">
-    <!--Icons made by Freepik (https://www.freepik.com) from Flaticon (https://www.flaticon.com/) -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snowjs</title>
+  <link rel="stylesheet" href="./style.css">
+  <!--Favicon made by Freepik (https://www.freepik.com) from Flaticon (https://www.flaticon.com/) -->
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="stylesheet" href="/css/bootstrap-icons/bootstrap-icons.min.css">
+  <script src="./pureSnow.js" defer></script>
+  <script>
+    function toggleDialog() {
+      document.querySelector('#content').classList.toggle('visible');
+      document.querySelector('.btn.toggle-icon').classList.toggle('visible');
+    }
+  </script>
 </head>
 
 <body>
-    <div id="snow"></div>
-
-    <div class="checkbox">
-        <input class="snow-checkbox" type="checkbox" id="toggleSnow" checked="true" onclick="toggleSnow()" /> Toggle Snow
+  <div id="snow"></div>
+  <button class="toggle-icon btn outlined btn-icon" onclick="toggleDialog()">
+    <i class="bi bi-arrow-90deg-left"></i>
+    <span>Restore dialog</span>
+  </button>
+  <main>
+    <div id="content" class="visible">
+      <button class="toggle-icon btn-icon" onclick="toggleDialog()">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      <h1>Hello, winter!</h1>
+      <div class="checkbox">
+        <input 
+          class="snow-checkbox" 
+          type="checkbox" 
+          id="toggleSnow" 
+          checked="true" 
+          onclick="showSnow(this.checked)" 
+        />
+        <label for="toggleSnow">Toggle Snow</label>
+      </div>
     </div>
-
-
-    <div id="content" style="text-align:center;">
-        <h1>Hello, winter!</h1>
-    </div>
-    <footer id="footer">Favicon made by Freepik (https://www.freepik.com) from Flaticon (https://www.flaticon.com/)</footer>
-      
-<script src="./pureSnow.js"></script>
+  </main>
+  <footer>
+    Favicon made by Freepik (https://www.freepik.com) from Flaticon (https://www.flaticon.com/)
+  </footer>
 </body>
 
 </html>

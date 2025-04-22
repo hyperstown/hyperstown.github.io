@@ -1,33 +1,104 @@
+html {
+  font-family: 'Courier New', Courier, monospace;
+}
+
 body {
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    /* If you want to change the site height you can remove overflow-y */
-    /* pureSnow will automatically detect height of body tag */
-    overflow-y: hidden;
-    color: white;
+  background-color: black;
+  background-image: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* If you want to change the site height you can remove overflow-y */
+  /* pureSnow will automatically detect height of body tag */
+  overflow-y: hidden;
+  color: white;
 }
 
 .snowflake {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: linear-gradient(white, white); /* Workaround for Chromium's selective color inversion */
-    border-radius: 50%;
-    filter: drop-shadow(0 0 10px white);
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(white, white);
+  /* Workaround for Chromium's selective color inversion */
+  border-radius: 50%;
+  filter: drop-shadow(0 0 10px white);
+}
+
+.btn-icon {
+  padding: 8px 12px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn.outlined {
+  border: 2px solid #535353;
+}
+
+.btn {
+  letter-spacing: .0892857143em; 
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: smaller;
+  background-color: black;
+}
+
+.btn:hover {
+  box-shadow: 0 0 15px 8px rgba(151, 151, 151, 0.5);
+}
+
+.toggle-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #content {
-    flex: 1;
-    padding: 20px;
+  width: 500px;
+  height: 200px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(83, 83, 83, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 0 15px 8px rgba(151, 151, 151, 0.5);
+  opacity: 0;
+  transform: scale(0.7);
+  transition: opacity 110ms ease-in-out, transform 110ms ease-in-out;
 }
 
-#footer {
-    padding: 20px;
-    display:flex;
-    justify-content:flex-end;
-    align-items:flex-end;
-    font-size: 10px;
+#content.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.toggle-icon.btn {
+  opacity: 0;
+}
+
+.toggle-icon.btn.visible {
+  opacity: 1;
+}
+
+footer {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 10px;
 }
